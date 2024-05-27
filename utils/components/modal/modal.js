@@ -83,7 +83,7 @@
 //       </div>
 //   );
 // }
-
+"use client";
 import React, { useState } from "react";
 import { Button } from "@mui/material";
 import ImageUploading from "react-images-uploading"; // Import the library

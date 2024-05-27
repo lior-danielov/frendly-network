@@ -117,18 +117,18 @@ export default function Navbar() {
         </div>
       </div>
       <div className="middle-nav row">
-{/* <<<<<<< HEAD */}
+        {/* <<<<<<< HEAD */}
         <Link href="/home">
-        <HomeRoundedIcon sx={{ fontSize: 40 }} />
+          <HomeRoundedIcon sx={{ fontSize: 40 }} />
         </Link>
-        
+
         <GroupOutlinedIcon sx={{ fontSize: 40 }} />
 
         <Link href="/stor">
-        <StoreRoundedIcon sx={{ fontSize: 40 }} />
+          <StoreRoundedIcon sx={{ fontSize: 40 }} />
         </Link>
-        
-{/* ======= */}
+
+        {/* ======= */}
         <Tabs
           value={value}
           onChange={handleChange}
@@ -145,15 +145,14 @@ export default function Navbar() {
             }
           />
           <Link href="/profile">
-          <Tab
-            icon={
-              <GroupOutlinedIcon
-                style={{ color: "black" }}
-                sx={{ fontSize: 40 }}
-              
-              />
-            }
-          />
+            <Tab
+              icon={
+                <GroupOutlinedIcon
+                  style={{ color: "black" }}
+                  sx={{ fontSize: 40 }}
+                />
+              }
+            />
           </Link>
           <Tab
             icon={
@@ -180,7 +179,7 @@ export default function Navbar() {
             }
           />
         </Tabs>
-{/* >>>>>>> d484a8f2207ca0a0af60d0d1194e6f2bee0e37d1 */}
+        {/* >>>>>>> d484a8f2207ca0a0af60d0d1194e6f2bee0e37d1 */}
       </div>
       <div className="nav-right row">
         <WidgetsRoundedIcon sx={{ fontSize: 40 }} />
