@@ -11,7 +11,7 @@
 }
 .nav-left {
   justify-content: space-between;
-  gap: 5px;
+  gap: 10px;
 }
 
 .search-input {

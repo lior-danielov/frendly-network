@@ -1,0 +1,12 @@
+.conteiner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sideBar{
+    flex: 1;
+}
+
+ .addPost{
+    flex: 4;
+ }
