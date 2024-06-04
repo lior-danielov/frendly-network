@@ -18,10 +18,16 @@ export default function Register() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Add form submission logic here
-    console.log(formData);
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    // Handle post submission logic here
+    const register = await createNewregister(data);
+    console.log(register);
+    alert("submited");
+    setPostContent("");
   };
 
   return (

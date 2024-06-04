@@ -6,7 +6,7 @@ import { nanoid } from "nanoid";
 import { useState } from "react";
 import { SortProducts } from "./sortProducts";
 
-export default function marketgrid() {
+export default function Marketgrid() {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState(0);
   const finale_products = product_list

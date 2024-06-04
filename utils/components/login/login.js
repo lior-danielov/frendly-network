@@ -2,13 +2,22 @@
 import { useState } from "react";
 import Link from "next/link";
 import "./login.css";
+import { createNewUser } from "@/utils/api/usersApi/userApi";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+
+ 
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    // Handle post submission logic here
+    const post = await createNewUser(data);
+    console.log(post);
+    alert( "submitted");
   };
 
   return (
